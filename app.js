@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/',(resq, res)=>{
     console.log('peticion recibida');
-    res.status(200).send('<h2>Hola mundo con nodemon <h2>');
+    res.status(200).send('<h2>Hola mundo! con git y nodemon<h2>');
 })
 
 app.listen(4000, ()=>{

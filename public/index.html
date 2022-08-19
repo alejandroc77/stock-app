@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>App js</title>
-</head>
-<body>
-    <h1>Nuestra primera app js</h1>
-    <h2>hola mundo con jordy maza</h2>
-    <script src="index.js"></script>
-</body>
+    <script src="index.js " defer></script>
+    <!-- defer hace que mi etiqueta se ejecute al ultimo contra:mongo Tqa6IidvWSONA0ar -->
+  </head>
+  <body>
+    <h1 class="title is-3">Nuestra primera app js</h1>
+
+    <div class="container is-widescreen">
+      <div class="box">
+        <input
+          class="input is-primary is-focused"
+          type="text"
+          id="productName"
+          placeholder="Nombre del producto"
+        />
+        <input
+          class="input is-info is-hovered"
+          type="number"
+          id="productNumber"
+          placeholder="Precio del producto"
+        />
+        <button class="button is-primary">Crear producto</button>
+      </div>
+    </div>
+  </body>
 </html>

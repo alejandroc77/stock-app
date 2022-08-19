@@ -1,12 +1,14 @@
 require('dotenv').config()
 const express = require('express')
-
+const path = require('path')
 const app = express()
 
-app.get('/',(resq, res)=>{
+app.use(express.static(path.join(__dirname,'public')))
+
+/* app.get('/',(resq, res)=>{
     console.log('peticion recibida');
-    res.status(200).send('<h2>Hola mundo! con git y nodemon y azure para hacer el deploy<h2>');
-})
+    res.status(200).sendFile('index.html',{root:__dirname});
+}) */
 
 const PORT = process.env.PORT || 4000
  

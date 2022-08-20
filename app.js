@@ -29,13 +29,13 @@ const Product = mongoose.model("Products", productSchema);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
-app.post("/api/v1/products", async (req, res) => {
+app.post("/api/v1/products",  (req, res) => {
   /* console.log("peticion recibida");
   console.log({ body: req.body });
   */ /* next(); */
   const newProduct = new Product(req.body);
 
-  await newProduct
+   newProduct
     .save()
     .then((resul) => {
       res.status(201).json({ ok: true });
